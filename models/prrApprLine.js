@@ -6,9 +6,8 @@ const Schema = mongoose.Schema;
 let prrApprLineSchema = new Schema({
     
 //General Data
-    PRRNo: {
-    type: Number,
-    default: 0000000000
+  PRRNo: {
+    type: Number
   },
 
   ApprSeq: {

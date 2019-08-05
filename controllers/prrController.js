@@ -8,6 +8,11 @@ const prrApprLineModel = mongoose.model("prrApprLine");
 const prrTotAmtCompModel = mongoose.model("prrTotAmtComp");
 const prrItemPriceAnalysisModel = mongoose.model("prrItemPriceAnalysis");
 
+import SapOperationsServices from '../services/SapOperations.service';
+
+var mVar;
+mVar = SapOperationsServices.invokeRFCFunction();
+
 //----------START prrHeader------------------
 
 let getAllprrHeader = (req, res) => {
